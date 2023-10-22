@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Calculators</title>
+    <link rel="stylesheet" href="styles/mortgageCalculator.css"/>
 </head>
 <body>
-    <script src="scripts/mortgageCalculator.js"></script>
+    <nav>
+        <a href="/index.html">Mortgage Calculator</a>
+        <a href="/futureValueCalculator.html">Future Value Calculator</a>
+        <a href="/presentvalueAnnuityCalculator.html">Present Value Annuity Calculator</a>
+     </nav>
+    
+         <h1>Mortgage Calculator</h1>
+    <P>Loan Amount <input type="number" id="loanAmount"/></P>
+    <P>Interest Rate <input type="number" id="interestRate"/></P>
+    <P>Loan Term <input type="number" id="loanTerm"/></P>
+
+    <p>Answer: <input type="number" id="mortgageRate" readonly/></p>
+
+    <input type="button" value="calculate" id="calculateButton" />
+
+     <script src="scripts/mortgageCalculator.js"></script>
 </body>
 </html>
